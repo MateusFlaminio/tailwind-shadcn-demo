@@ -1,0 +1,41 @@
+// SCSS: nesting + variáveis, mas continua a ser CSS separado do JSX
+$blue: #2563eb;
+$blue-dark: #1d4ed8;
+
+.card {
+  max-width: 20rem;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e5e5;
+  background: white;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+
+  @media (min-width: 768px) {
+    max-width: 24rem;
+  }
+
+  &__title { 
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    margin-bottom: 0.5rem; 
+  }
+
+  &__text { 
+    color: #737373; 
+    font-size: 0.875rem; 
+  }
+
+  &__button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: $blue;
+    color: white;
+    cursor: pointer;
+    
+    &:hover { 
+      background: $blue-dark; 
+    }
+  }
+}

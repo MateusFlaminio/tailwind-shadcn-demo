@@ -1,0 +1,40 @@
+/* CSS puro: inventar nomes, saltar entre ficheiros */
+.card {
+  max-width: 20rem;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e5e5;
+  background: white;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+}
+
+.card__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card__text {
+  color: #737373;
+  font-size: 0.875rem;
+}
+
+.card__button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.card__button:hover {
+  background: #1d4ed8;
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 24rem;
+  }
+}
